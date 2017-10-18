@@ -1,0 +1,28 @@
+{
+	"name": "pyrite-connect-emitter",
+	"version": "0.0.2",
+	"description": "Pyrite Connect Emitter",
+	"main": "lib/index.js",
+	"types": "lib/src/index.d.ts",
+	"scripts": {
+		"build": "tsc",
+		"watch": "webpack"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/pyrite-framework/pyrite-connect-emitter.git"
+	},
+	"author": "Fabio Garcia",
+	"license": "MIT",
+	"devDependencies": {
+		"awesome-typescript-loader": "^3.2.1",
+		"source-map-loader": "^0.2.1",
+		"typescript": "^2.5.3",
+		"webpack": "^3.3.0"
+	},
+	"dependencies": {
+		"@types/socket.io-client": "^1.4.31",
+		"pyrite-connect": "^0.1.0",
+		"socket.io-client": "^2.0.3"
+	}
+}

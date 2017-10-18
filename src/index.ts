@@ -1,0 +1,1 @@
+export { EmitterPlugin } from "./plugin";
