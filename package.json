@@ -1,9 +1,9 @@
 {
 	"name": "pyrite-connect-emitter",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"description": "Pyrite Connect Emitter",
 	"main": "lib/index.js",
-	"types": "lib/src/index.d.ts",
+	"types": "lib/index.d.ts",
 	"scripts": {
 		"build": "tsc",
 		"watch": "webpack"
