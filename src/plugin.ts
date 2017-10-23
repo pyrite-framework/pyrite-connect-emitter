@@ -1,4 +1,5 @@
 import * as io from "socket.io-client";
+import * as m from "mithril";
 
 export class EmitterPlugin {
 	socket: any;
@@ -53,7 +54,11 @@ export class EmitterPlugin {
 		let callback: Function = (): any => {};
 
 		const listener: Function = (response: any): void => {
-			callback(response.data, response.id);
+			const redraw = { background: false };
+
+			callback(response.data, response.id, redraw);
+
+			if (!redraw.background) m.redraw();
 		};
 
 		controller.on[methodName] = (emitCallback: Function): void => {
